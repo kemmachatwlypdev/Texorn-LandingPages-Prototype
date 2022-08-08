@@ -7,9 +7,6 @@
             <v-col cols="12" sm="5">
               <h1 class="font-weight-light display-1">Contact-us</h1>
               <h3 class="font-weight-light mt-3">
-                Deankhayandev Office 
-              </h3>
-              <h3 class="font-weight-light mt-3">
                 108/5 TherdThai 33 Daokhanong Thonburi Bangkok 10600.
               </h3>
               <h3 class="font-weight-light mt-3">
@@ -18,6 +15,8 @@
               <h3 class="font-weight-light">
                 Email: kemmachat@texorn.tech
               </h3>
+              <br>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.103778124134!2d100.47408021483002!3d13.712163990373144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299c32cd30903%3A0x5291b3423d8db8b6!2z4LiU4Li14LiZ4LiC4Lii4Lix4LiZ4LmA4LiU4Lif!5e0!3m2!1sth!2sth!4v1659950351248!5m2!1sth!2sth" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </v-col>
             <v-col cols="12" sm="7">
               <v-form ref="form" v-model="valid" :lazy-validation="lazy">
