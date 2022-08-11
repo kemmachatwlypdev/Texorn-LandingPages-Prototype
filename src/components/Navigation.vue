@@ -68,7 +68,7 @@
           <span class="mr-2">Academic</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Price</span>
+          <span class="mr-2">Services</span>
         </v-btn>
         <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
           <span class="mr-2">Contact</span>

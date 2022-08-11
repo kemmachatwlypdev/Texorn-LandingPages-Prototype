@@ -1,12 +1,12 @@
 <template>
   <section id="hero">
-    <v-parallax dark src="@/assets/img/bgHeroG.jpg" height="750">
+    <v-parallax dark src="@/assets/img/bgHeroG3.png" height="750">
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
               <h1 class="display-2 font-weight-bold mb-4">Texorn Digital Solution</h1>
-              <h1 class="font-weight-light">
+              <h1 class="font-weight-bold">
                 We are a Startup company that is committed to developing <br />
                 Automation and Innovation that is different answer and the question <br />
                 That will help make doing business easy.

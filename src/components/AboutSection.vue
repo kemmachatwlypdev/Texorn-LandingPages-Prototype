@@ -5,10 +5,10 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="7">
-              <h1 class="font-weight-light display-2">About</h1>
-              <h1 class="font-weight-light display-1 mb-3">
-                Lorem ipsum dolor!
-              </h1>
+              <h1 class="font-weight-light display-2">What You Will Get:</h1>
+              <!-- <h1 class="font-weight-light display-1 mb-3">
+              </h1> -->
+              <br><br>
               <v-row>
                 <v-col cols="12" class="d-flex align-center">
                   <v-img
@@ -17,9 +17,8 @@
                     class="mr-4"
                   />
                   <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Save at least 80% of the cost within 12 months, allow organizations to recoup an investment, and lower up to 20% 
+                    of the total expected expenses.
                   </p>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
@@ -28,10 +27,8 @@
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  <p class="text-justify"> 
+                    Follow the steps quickly, accurately, and consistently around the clock.
                   </p>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
@@ -40,10 +37,8 @@
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  <p class="text-justify"> 
+                    Due to fast services provided by the Robot, employees have more time to develop new creations to earn more values to the company and reduce workloads.
                   </p>
                 </v-col>
               </v-row>

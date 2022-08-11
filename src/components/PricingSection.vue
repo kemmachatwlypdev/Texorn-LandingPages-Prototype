@@ -4,7 +4,7 @@
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-card style="width: 100%">
-            <h1 class="text-center pt-6 font-weight-light display-2">Plans</h1>
+            <h1 class="text-center pt-6 font-weight-light display-2">Services</h1>
             <v-divider class="my-6"></v-divider>
             <v-row class="text-center">
               <v-col class="col-12 col-sm-6 col-md-4">
@@ -17,7 +17,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Basic</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">Robotic Process Creation Service</div>
                     <v-divider class="my-2"/>
                     <div class="text-uppercase blue--text">Custom Domain</div>
                     <v-divider class="my-2"/>
