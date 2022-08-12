@@ -66,7 +66,7 @@ export default {
 
   created() {
     const top = window.pageYOffset || 0;
-    document.title = "Texorn RPA Solution";
+    document.title = "Texorn Automate Solution"; //ชื่อเก่า RPA Solution จะทำให้ขยายธุรกิจไปทิศทางอื่นไม่ได้
 
     if (top <= 60) {
       this.color = "transparent";
