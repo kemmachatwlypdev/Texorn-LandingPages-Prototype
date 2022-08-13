@@ -1,17 +1,17 @@
 <template>
-    <div>
-
+    <div id="blogs" >
+        <navigation :color="color" :flat="flat" />
     </div>
 </template>
 
 <script setup>
-import Name from '@/components/Name.vue';
+import navigation from "./NavigationBlogs.vue";
 
-export default {
+export default{
     components: {
-        Name
-    },
-};
+        navigation
+    }
+}
 </script>
 
 <style lang="scss" scoped>

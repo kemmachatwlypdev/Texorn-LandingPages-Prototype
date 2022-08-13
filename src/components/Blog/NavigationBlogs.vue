@@ -13,7 +13,7 @@
             <img src="@/assets/img/logo.png" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">Texorn</v-list-item-title>
+            <v-list-item-title class="title">Calango</v-list-item-title>
             <v-list-item-subtitle>WEB</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
@@ -39,10 +39,10 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-
+      <!-- :color="color" -->
     <v-app-bar
       app
-      :color="color"
+      style="background-color: #171b34;"
       :flat="flat"
       dark
       class="px-15"
@@ -59,23 +59,11 @@
       />
       <div v-else>
         <v-btn text href="/">
-          <span class="mr-2">Home</span>
+          <span class="mr-3"><span class="material-icons"> arrow_back </span></span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#features')">
-          <span class="mr-2">About</span>
-        </v-btn>
-        <v-btn text href="/blogs">
+        <!-- <v-btn text href="/blogs">
           <span class="mr-2">Blog</span>
-        </v-btn>
-        <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-2">Academic</span>
-        </v-btn>
-        <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Services</span>
-        </v-btn>
-        <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
-          <span class="mr-2">Contact</span>
-        </v-btn>
+        </v-btn> -->
       </div>
     </v-app-bar>
   </div>
@@ -85,7 +73,13 @@
 .v-toolbar {
   transition: 0.6s;
 }
-
+.v-btn { 
+    width: 300px;
+}
+/* 
+.v-btn::v-deep .material-icons{
+    font-size: auto;
+} */
 .expand {
   height: 80px !important;
   padding-top: 10px;
@@ -103,7 +97,7 @@ export default {
       ["mdi-post-outline", "Blogs", "#blogs"],
       ["mdi-download-box-outline", "Academic", "#download"],
       ["mdi-currency-usd", "Services", "#pricing"],
-      ["mdi-email-outline", "Contact", "#contact"]
+      ["mdi-email-outline", "Contact", "#contact"],
     ],
   }),
   props: {
@@ -112,7 +106,7 @@ export default {
   },
   methods: {
     onResize() {
-      this.isXs = window.innerWidth < 850;
+      this.isXs = window.innerWidth < 10;
     },
   },
 
