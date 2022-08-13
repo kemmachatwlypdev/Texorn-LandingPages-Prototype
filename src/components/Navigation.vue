@@ -14,7 +14,7 @@
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="title">Texorn</v-list-item-title>
-            <v-list-item-subtitle>WEB</v-list-item-subtitle>
+            <v-list-item-subtitle>Digital Solution</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -37,6 +37,17 @@
             }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        
+          <v-list-item>
+          <v-list-item-icon class="justify-center">
+            <!-- <v-icon>{{mdi-post-outline}}</v-icon> -->
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title class="subtitile-1">
+              <router-link to="/blogs"  class="white--text text-decoration-none ">Blogs</router-link></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+            <!-- <v-btn href="/blogs" style="display:flex; background-color: transparent;">Blogs</v-btn> -->
       </v-list>
     </v-navigation-drawer>
 
@@ -65,7 +76,7 @@
           <span class="mr-2">About</span>
         </v-btn>
         <v-btn text href="/blogs">
-          <span class="mr-2">Blog</span>
+          <span class="mr-2">Blogs</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#download')">
           <span class="mr-2">Academic</span>
@@ -82,6 +93,10 @@
 </template>
 
 <style scoped>
+.v-list-item:hover {
+ background-color: black;
+}
+
 .v-toolbar {
   transition: 0.6s;
 }
@@ -100,7 +115,6 @@ export default {
     items: [
       ["mdi-home-outline", "Home", "#hero"],
       ["mdi-information-outline", "About", "#features"],
-      ["mdi-post-outline", "Blogs", "#blogs"],
       ["mdi-download-box-outline", "Academic", "#download"],
       ["mdi-currency-usd", "Services", "#pricing"],
       ["mdi-email-outline", "Contact", "#contact"]
