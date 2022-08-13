@@ -64,6 +64,9 @@
         <v-btn text @click="$vuetify.goTo('#features')">
           <span class="mr-2">About</span>
         </v-btn>
+        <v-btn icon href="https://stackoverflow.com/questions/49654527/open-link-in-new-window-with-vuetify-v-btn-and-vue-router" target="_blank">
+          <span class="mr-2">Blog</span>
+        </v-btn>
         <v-btn text @click="$vuetify.goTo('#download')">
           <span class="mr-2">Academic</span>
         </v-btn>
