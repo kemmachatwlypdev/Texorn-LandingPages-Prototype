@@ -12,7 +12,7 @@
               <h3 class="font-weight-light mt-3">
                 Telephone: +66‑90‑924‑5391
               </h3>
-              <h3 class="font-weight-light">
+              <h3 class="font-weight-light mt-3 ">
                 Email: kemmachat@texorn.tech
               </h3>
               <br>

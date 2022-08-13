@@ -5,23 +5,12 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Texorn Digital Solution</h1>
+              <h1 class="display-2 font-weight-bold mb-4 mt-8">Texorn Digital Solution</h1>
               <h1 class="font-weight-bold">
                 We are a Startup company that is committed to developing <br />
                 Automation and Innovation that is different answer and the question <br />
                 That will help make doing business easy.
               </h1>
-              <v-btn
-                rounded
-                outlined
-                large
-                dark
-                @click="$vuetify.goTo('#features')"
-                class="mt-5"
-              >
-                More information
-                <v-icon class="ml-2">mdi-arrow-down</v-icon>
-              </v-btn>
               <div class="video d-flex align-center py-4">
                 <a @click.stop="dialog = true" class="playBut">
                   <svg
@@ -62,8 +51,19 @@
                     />
                   </svg>
                 </a>
-                <p class="subheading ml-2 mb-0">Watch the video</p>
+                <p class="subheading ml-2">Watch the video</p>
               </div>
+                            <v-btn
+                rounded
+                outlined
+                large
+                dark
+                @click="$vuetify.goTo('#features')"
+                class="mt-2"
+              >
+                More information
+                <v-icon class="ml-2">mdi-arrow-down</v-icon>
+              </v-btn>
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
           </v-row>
