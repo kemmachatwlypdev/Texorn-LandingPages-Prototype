@@ -26,6 +26,8 @@
                 </a>
                 <p class="subheading ml-2">Watch the video</p>
               </div>
+
+
               <v-menu :rounded="rounded" top center>
                 <template v-slot:activator="{ on, attrs }" >
                   <v-btn style="color: black;background-color: white;" rounded outlined large dark v-bind="attrs"
@@ -36,10 +38,10 @@
                   </v-btn>
                 </template>
                 <br><br><br>
-               
-                <v-menu__content class="row">
+               <div class="overflow-hidden">
+                                <v-menu__content class="row">
                   <div class="col-md-6"></div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 overflow-hidden ">
                     <h4 text class="text-justify-end rounded-t-xl px-8 py-10 font-weight-light "
                       style="color: white ;background-color: darkslategray;">
                       Tasks performed by the Minimally Qualified Candidate:
@@ -66,7 +68,10 @@
                     </h1>
                   </div>
                 </v-menu__content>
+               </div>
+                
               </v-menu>
+
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
           </v-row>
