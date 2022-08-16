@@ -31,11 +31,11 @@
                   </v-card-text>
 
                   <v-card-actions justify="end">
-                    <v-btn color="orange" text>
+                    <v-btn color="orange" text href="/blogsitem">
                       Share
                     </v-btn>
 
-                    <v-btn color="orange" text>
+                    <v-btn color="orange" text href="/blogsitem">
                       Explore
                     </v-btn>
                   </v-card-actions>
