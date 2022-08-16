@@ -1,7 +1,7 @@
 <template>
   <section id="hero">
     <v-parallax dark src="@/assets/img/bgHeroG3.png" height="1024">
-      <v-row align="center" justify="center" >
+      <v-row align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
@@ -29,7 +29,7 @@
 
 
               <v-menu :rounded="rounded" top center>
-                <template v-slot:activator="{ on, attrs }" >
+                <template v-slot:activator="{ on, attrs }">
                   <v-btn style="color: black;background-color: white;" rounded outlined large dark v-bind="attrs"
                     v-on="on" class="mt-8">
 
@@ -38,38 +38,39 @@
                   </v-btn>
                 </template>
                 <br><br><br>
-               <div class="overflow-hidden">
-                                <v-menu__content class="row">
-                  <div class="col-md-6"></div>
-                  <div class="col-md-6">
-                    <h4 text class="text-justify-end rounded-t-xl px-8 py-10 font-weight-light "
-                      style="color: white ;background-color: darkslategray;">
-                      Tasks performed by the Minimally Qualified Candidate:
-                      UiPath Studio
-                      • Identify and describe how UI Automation activities and/or Excel activities (Classic design
-                      experience) can be configured to interact with background windows
-                      • Describe how to use state machines versus flowcharts and sequences
-                      • Describe how to use and configure Activity Project Settings and Classic Libraries
-                      UiPath Studio  Activities and Properties
-                      • Identify and describe how activities are used to automate actions in Excel, e-mail, and .pdfs
-                      • Differentiate between input methods in the Classic design experience
-                      • Identify and describe the key Classic UI Activities' properties; for example, ContinueOnError,
+                <div class="overflow-hidden">
+                  <v-menu__content class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                      <h4 text class="text-justify-end rounded-t-xl px-8 py-10 font-weight-light "
+                        style="color: white ;background-color: darkslategray;">
+                        Tasks performed by the Minimally Qualified Candidate:
+                        UiPath Studio
+                        • Identify and describe how UI Automation activities and/or Excel activities (Classic design
+                        experience) can be configured to interact with background windows
+                        • Describe how to use state machines versus flowcharts and sequences
+                        • Describe how to use and configure Activity Project Settings and Classic Libraries
+                        UiPath Studio Activities and Properties
+                        • Identify and describe how activities are used to automate actions in Excel, e-mail, and .pdfs
+                        • Differentiate between input methods in the Classic design experience
+                        • Identify and describe the key Classic UI Activities' properties; for example, ContinueOnError,
 
 
 
 
-                    </h4>
-                    <h1 text class="text-end col-12 font-weight-light  " style="color: white;background-color: black;">
-                      <!-- <v-btn text href="/blogs" target="_blank"> -->
-                       <v-btn text @click="$vuetify.goTo('#features')">
-                        <span class="mr-0" style="color: white;">about</span>
-                      </v-btn>
+                      </h4>
+                      <h1 text class="text-end col-12 font-weight-light  "
+                        style="color: white;background-color: black;">
+                        <!-- <v-btn text href="/blogs" target="_blank"> -->
+                        <v-btn text @click="$vuetify.goTo('#features')">
+                          <span class="mr-0" style="color: white;">about</span>
+                        </v-btn>
 
-                    </h1>
-                  </div>
-                </v-menu__content>
-               </div>
-                
+                      </h1>
+                    </div>
+                  </v-menu__content>
+                </div>
+
               </v-menu>
 
             </v-col>
@@ -287,7 +288,7 @@ export default {
 
 .v-menu>.v-menu__content {
   max-width: none;
-  
+
 }
 
 .v-menu__content {
