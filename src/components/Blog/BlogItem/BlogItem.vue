@@ -3,15 +3,30 @@
     <div>
       <navigation :color="color" :flat="flat" />
     </div>
-    <br /><br /><br /><br /><br />
-    <v-row justify="center">
-      <v-col align="start" cols="9">
+    <br /><br /><br /><br />
+    <v-row no-gutters justify="center">
+      <v-col align="start" cols="10">
         <div>
           <h1>
             What is RPA ?
           </h1>
-          <br />
-          <img src="./BlogItemIMG/Robotic_process_automation-1108451648.png" alt="RPA" width="100%" />
+         
+          <v-row>
+            <v-col md="12">
+              <img src="./BlogItemIMG/Robotic_process_automation-1108451648.png" alt="RPA" width="90%" style="float: left;" />
+             <a href="https://www.facebook.com/">
+                <v-btn style="color: black; box-shadow: none; background-color: white; position: fixed;"
+                  class="mt-8">
+                  <v-icon>mdi-facebook</v-icon>
+                </v-btn>
+              </a><br><br>
+              <v-btn style="color: black; box-shadow: none; background-color: white; position: fixed;" dark
+                v-bind="attrs" v-on="on" class="mt-8">
+                <v-icon>mdi-twitter</v-icon>
+              </v-btn>
+            </v-col>
+          </v-row>
+
           <br />
           <br />
           <div class="text-align: center">
@@ -26,24 +41,14 @@
               deleniti!
             </article>
           </div>
-          <div id="youtubeEmbed">
-            <br />
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/9URSbTOE4YI"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
         </div>
-      </v-col>
-      <v-col align="center" cols="1">
-        <a href="https://www.facebook.com/">
-        <v-btn style="right: 5%; color: black; box-shadow: none; background-color: white; position: fixed;" class="mt-8">
-          <v-icon>mdi-facebook</v-icon>
-        </v-btn></a><br><br>
-        <v-btn style="color: black; box-shadow: none; background-color: white; position: fixed;" dark v-bind="attrs"
-          v-on="on" class="mt-8">
-          <v-icon style="right: 60%;">mdi-twitter</v-icon>
-        </v-btn>
+        <div class="col-md-5" id="youtubeEmbed">
+          <br />
+          <iframe width="100%" height="350" src="https://www.youtube.com/embed/9URSbTOE4YI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </v-col>
     </v-row>
   </div>
