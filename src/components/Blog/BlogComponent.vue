@@ -32,13 +32,9 @@
                     <div>Whitsunday Island, Whitsunday Islands</div>
                   </v-card-text>
 
-<<<<<<< HEAD
-                  <v-card-actions>
-                    <v-btn color="orange" text>
-=======
                   <v-card-actions justify="end">
                     <v-btn color="orange" text href="/blogsitem">
->>>>>>> 007dc39bad2883b53d921570ebb90c2aa967657f
+
                       Share
                     </v-btn>
 
