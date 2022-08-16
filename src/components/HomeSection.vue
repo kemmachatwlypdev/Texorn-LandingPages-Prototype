@@ -41,7 +41,7 @@
                <div class="overflow-hidden">
                                 <v-menu__content class="row">
                   <div class="col-md-6"></div>
-                  <div class="col-md-6 overflow-hidden ">
+                  <div class="col-md-6">
                     <h4 text class="text-justify-end rounded-t-xl px-8 py-10 font-weight-light "
                       style="color: white ;background-color: darkslategray;">
                       Tasks performed by the Minimally Qualified Candidate:
