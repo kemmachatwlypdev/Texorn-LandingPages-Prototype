@@ -8,9 +8,11 @@
       src="@/assets/img/bgDrawer.jpg"
     >
       <v-list>
-        <v-list-item>
+        <v-list-item>   
           <v-list-item-avatar>
-            <img src="@/assets/img/logo.png" alt="Logo" />
+           <a href="/" no-caps flat color="primary">
+          <v-img src="@/assets/img/logo.png" max-width="10%" class="mt-1" />
+        </a>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="title">Texorn</v-list-item-title>
@@ -65,7 +67,9 @@
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
-        <v-img src="@/assets/img/logo.png" max-width="11%" class="ml-2" />
+        <a href="/" no-caps flat color="primary">
+          <v-img src="@/assets/img/logo.png" max-width="11%" class="ml-2" />
+        </a>
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon
