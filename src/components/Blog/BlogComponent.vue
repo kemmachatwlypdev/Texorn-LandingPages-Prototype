@@ -3,15 +3,15 @@
     <div>
       <navigation :color="color" :flat="flat" />
     </div>
-    <br /><br /><br /><br />
+    <br /><br /><br /><br /><br />     
     <v-row align="center" justify="center">
       <v-col cols="9">
         <v-container class="white lighten-5 hidden">
-          <v-row no-gutters>
+          <v-row   >
             <v-col v-for="n in 6" :key="n" cols="12" sm="4">
-              <v-card class="pa-2 py-8" hidden>
+              <v-card class="rounded-xl">
 
-                <v-card class="mx-auto" max-width="400">
+                <v-card max-width="100%">
                   <v-img
                     class="white--text align-end"
                     height="200px"
@@ -30,7 +30,7 @@
                     <div>Whitsunday Island, Whitsunday Islands</div>
                   </v-card-text>
 
-                  <v-card-actions>
+                  <v-card-actions justify="end">
                     <v-btn color="orange" text>
                       Share
                     </v-btn>
