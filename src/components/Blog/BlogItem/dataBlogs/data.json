@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "topics": "What is RPA?",
+            "image": "@/components/Blog/BlogItem/BlogItemIMG/Robotic_process_automation-1108451648.png",
+            "article": "Both artifacts are interpreted during runtime by the framework and mapped to respective UI components, which already feature data binding, validation etc."
+        },
+        {
+            "id": 2,
+            "topics": "Why we need idol?",
+            "image": "@/components/Blog/BlogItem/BlogItemIMG/Robotic_process_automation-1108451648.png",
+            "article": "Both artifacts are interpreted during runtime by the framework and mapped to respective UI components, which already feature data binding, validation etc."
+        },
+        {
+            "id": 3,
+            "topics": "How to data binding axios?",
+            "image": "@/components/Blog/BlogItem/BlogItemIMG/Robotic_process_automation-1108451648.png",
+            "article": "Both artifacts are interpreted during runtime by the framework and mapped to respective UI components, which already feature data binding, validation etc."
+        }   
+    ]
+}
