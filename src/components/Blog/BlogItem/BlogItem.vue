@@ -4,16 +4,16 @@
       <navigation :color="color" :flat="flat" />
     </div>
     <br /><br /><br /><br />
-    <v-row no-gutters justify="center">
-      <v-col align="start" cols="10">
+    <v-row no-gutters justify="center" v-for="blog in blogsdata" :key="blog.id">
+      <v-col align="start" cols="10" >
         <div>
           <h1>
-            What is RPA ?
+            {{blog.topics}}
           </h1>
-         
+         <router-link :to="'/blogsitem/' + blog.id">Test Link</router-link>
           <v-row>
             <v-col md="12">
-              <img src="./BlogItemIMG/Robotic_process_automation-1108451648.png" alt="RPA" width="90%" style="float: left;" />
+              <img v-bind:src="blog.imagesrc" alt="RPA" width="90%" style="float: left;" />
              <a href="https://www.facebook.com/">
                 <v-btn style="color: black; box-shadow: none; background-color: white; position: fixed;"
                   class="mt-8">
@@ -31,14 +31,7 @@
           <br />
           <div class="text-align: center">
             <article>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-              quo natus non quaerat hic. Minima, dicta neque aperiam fuga sequi
-              recusandae perspiciatis, autem explicabo sapiente, excepturi odio
-              voluptas voluptatem deleniti! <br>Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Nostrum quo natus non quaerat hic.
-              Minima, dicta neque aperiam fuga sequi recusandae perspiciatis,
-              autem explicabo sapiente, excepturi odio voluptas voluptatem
-              deleniti!
+              {{blog.article}}
             </article>
           </div>
         </div>
@@ -56,12 +49,19 @@
 
 <script setup>
 import navigation from "../NavigationBlogs.vue";
+import blogs from "./dataBlogs/data.js";
 
 export default {
   components: {
     navigation,
   },
+  data(){
+    return{
+      blogsdata:blogs
+    }
+  }
 };
+
 </script>
 
 <style lang="scss" scoped>

@@ -15,13 +15,21 @@ const routes = [
     {
         path: '/blogs',
         name: 'blogs',
-        component: Blogs
+        component: Blogs,
+        // children: [
+        //     {
+        //         path: '/blogsitem',
+        //         name: 'blogsitem',
+        //         component: BlogsItem
+        //     }
+        // ]
     },
     {
-        path: '/blogsitem',
+        path: '/blogsitem/:id',
         name: 'blogsitem',
-        component: BlogsItem
+        component: BlogsItem,
     }
+
 ]
 
 const router = new Router({
