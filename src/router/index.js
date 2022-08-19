@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Blogs from '../components/Blog/BlogComponent.vue'
 import Home from '../view/homeComponent.vue'
 import BlogsItem from '../components/Blog/BlogItem/BlogItem.vue'
+import InputForms from '../components/DemoApp/InputForms/InputForms.vue'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ const routes = [
         path: '/blogsitem/:id',
         name: 'blogsitem',
         component: BlogsItem,
+    },
+    {
+        path: '/inputforms',
+        name: 'inputforms',
+        component: InputForms,
     }
 
 ]
