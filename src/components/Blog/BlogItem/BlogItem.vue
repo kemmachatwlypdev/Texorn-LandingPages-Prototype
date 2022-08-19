@@ -9,7 +9,7 @@
         <div>
           <button @click="showindex">Press log</button>
           <h1>
-            <!-- {{this.blogsdata[id].topics}} -->
+            {{blogs[id-1].topics}}
           </h1>
           <!-- <router-link :to="'/blogsitem/' + blog.id">Test Link</router-link> -->
           <v-row>
@@ -43,7 +43,7 @@
           <br />
           <br />
           <div class="text-align: center">
-            <article></article>
+            <article>{{blogs[id-1].article}}</article>
           </div>
         </div>
         <div class="col-md-5" id="youtubeEmbed">
@@ -65,7 +65,7 @@
 
 <script setup>
 import navigation from "../NavigationBlogs.vue";
-import blogs from "./dataBlogs/data.js";
+import blogsData from "@/components/Blog/BlogItem/dataBlogs/data.json";
 import axios from "axios";
 
 
@@ -77,6 +77,7 @@ export default {
     return{
       blogsdata:[],
       id:'',
+      blogs: blogsData,
     }
   },
   mounted(){
@@ -95,7 +96,7 @@ export default {
     showindex(){
       // const index=this.blogsdata.map(obj => obj.id)
       // const topics=this.blogsdata.map(obj => obj.topics)
-      // const id=this.$route.params.id
+      const id=this.$route.params.id
       console.log()
       // console.log(this.blogsdata[index[0]].topics)
     }
