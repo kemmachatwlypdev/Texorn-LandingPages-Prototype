@@ -16,5 +16,11 @@
         "topics": "How to data binding axios?",
         "image": "@/components/Blog/BlogItem/BlogItemIMG/Robotic_process_automation-1108451648.png",
         "article": "Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3"
+    },
+    {
+        "id": 4,
+        "topics": "How to bind image src",
+        "image": "@/components/Blog/BlogItem/BlogItemIMG/Robotic_process_automation-1108451648.png",
+        "article": "Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3"
     }
 ]
