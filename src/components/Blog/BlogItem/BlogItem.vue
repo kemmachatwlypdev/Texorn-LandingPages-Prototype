@@ -9,17 +9,12 @@
         <div>
           <button @click="showindex">Press log</button>
           <h1>
-            {{blogs[id-1].topics}}
+            {{ blogs[id - 1].topics }}
           </h1>
           <!-- <router-link :to="'/blogsitem/' + blog.id">Test Link</router-link> -->
           <v-row>
             <v-col md="12">
-              <img
-                src="./BlogItemIMG/Robotic_process_automation-1108451648.png"
-                alt="RPA"
-                width="90%"
-                style="float: left;"
-              />
+              <img v-bind:src="getImg(blogs[id-1].image)" alt="RPA" width="90%" style="float: left;" />
               <a href="https://www.facebook.com/">
                 <v-btn
                   style="color: black; box-shadow: none; background-color: white; position: fixed;"
@@ -43,7 +38,7 @@
           <br />
           <br />
           <div class="text-align: center">
-            <article>{{blogs[id-1].article}}</article>
+            <article>{{ blogs[id - 1].article }}</article>
           </div>
         </div>
         <div class="col-md-5" id="youtubeEmbed">
@@ -67,6 +62,7 @@
 import navigation from "../NavigationBlogs.vue";
 import blogsData from "@/components/Blog/BlogItem/dataBlogs/data.json";
 import axios from "axios";
+import { required } from "vee-validate/dist/rules";
 
 
 export default {
@@ -93,13 +89,20 @@ export default {
   //   }
   // },
   methods:{
+    // bindimage(src){
+    //   const imgsrc=require(src)
+    //   console.log(imgsrc)
+    //   return imgsrc
+    // },
     showindex(){
       // const index=this.blogsdata.map(obj => obj.id)
       // const topics=this.blogsdata.map(obj => obj.topics)
       const id=this.$route.params.id
-      console.log()
       // console.log(this.blogsdata[index[0]].topics)
-    }
+    },
+     getImg(img) {
+       return require(`@/components/Blog/BlogItem/BlogItemIMG/${img}`);
+     }
     // const index=this.blogsdata.map(obj => obj.id)
     // showconsole(){
     //   console.log(this.blogsdata[1].topics);
