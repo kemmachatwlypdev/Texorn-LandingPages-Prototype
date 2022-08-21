@@ -3,7 +3,7 @@
     <div>
       <navigation :color="color" :flat="flat" />
     </div>
-    <br /><br /><br /><br /><br />
+    <br /><br /><br />
     <v-row align="center" justify="center">
       <v-col cols="9">
         <v-container class="white lighten-5 hidden">
