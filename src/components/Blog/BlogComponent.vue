@@ -8,15 +8,16 @@
       <v-col cols="9">
         <v-container class="white lighten-5 hidden">
           <v-row>
-            <v-col v-for="n in blogslength" :key="n" cols="12" sm="4">
+            <v-col v-for="(item, n) in blogslength" :key="n" cols="12" sm="4">
               <v-card class="rounded-xl">
                 <v-card max-width="100%">
                   <v-img
                     class="white--text align-end"
                     height="200px"
-                    v-bind:src="getImg(blogsdt[0].image)"
+                    v-bind:src="getImg(blogsdt[1].image)" 
                   >
-                    <v-card-title>{{ blogsdt[0].topics }}</v-card-title>
+                  <!-- Can't Dynamic [n] -->
+                    <v-card-title style="color:white">{{ blogsdt[n].topics }}</v-card-title>
                   </v-img>
                   <!-- src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" -->
                   <v-card-subtitle class="pb-0">
@@ -24,7 +25,7 @@
                   </v-card-subtitle>
 
                   <v-card-text class="text--primary">
-                    <div>Whitehaven Beach</div>
+                    <div>{{ blogsdt[n].article}}</div>
 
                     <div>Whitsunday Island, Whitsunday Islands</div>
                   </v-card-text>
@@ -68,6 +69,9 @@ export default {
     };
   },
   methods: {
+    incrementIndex(n) {
+      return n + 1;
+    },
     gopath() {
       // const index=this.blogsdata.map(obj => obj.id)
       // const topics=this.blogsdata.map(obj => obj.topics)
