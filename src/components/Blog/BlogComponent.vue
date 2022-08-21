@@ -14,13 +14,13 @@
                   <v-img
                     class="white--text align-end"
                     height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    v-bind:src="getImg(blogsdt[0].image)"
                   >
-                    <v-card-title>{{blogsdt[0].topics}}</v-card-title>
+                    <v-card-title>{{ blogsdt[0].topics }}</v-card-title>
                   </v-img>
-
+                  <!-- src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" -->
                   <v-card-subtitle class="pb-0">
-                    {{n}}<br>
+                    {{ n }}<br />
                   </v-card-subtitle>
 
                   <v-card-text class="text--primary">
@@ -34,7 +34,7 @@
                       Share
                     </v-btn>
 
-                    <v-btn color="orange" text href="/blogsitem/">
+                    <v-btn color="orange" text href="/blogsitem/1">
                       Explore
                     </v-btn>
                   </v-card-actions>
@@ -52,6 +52,7 @@
 import navigation from "./NavigationBlogs.vue";
 import blogsData from "@/components/Blog/BlogItem/dataBlogs/data.json";
 import blogs from "./BlogItem/dataBlogs/data";
+import { required } from "vee-validate/dist/rules";
 
 export default {
   components: {
@@ -72,6 +73,9 @@ export default {
       // const topics=this.blogsdata.map(obj => obj.topics)
       console.log(blogslength);
       // window.location.href = "/blogsitem/"+1;
+    },
+    getImg(img) {
+      return require(`@/components/Blog/BlogItem/BlogItemIMG/${img}`);
     },
     // const index=this.blogsdata.map(obj => obj.id)
     // showconsole(){
