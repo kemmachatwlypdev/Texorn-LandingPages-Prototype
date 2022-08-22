@@ -17,7 +17,7 @@
                     v-bind:src="getImg(blogsdt[1].image)" 
                   >
                   <!-- Can't Dynamic [n] -->
-                    <v-card-title style="color:white">{{ blogsdt[n].topics }}</v-card-title>
+                    <v-card-title style="color:white">{{ blogsdt[n].title }}</v-card-title>
                   </v-img>
                   <!-- src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" -->
                   <v-card-subtitle class="pb-0">
@@ -25,9 +25,9 @@
                   </v-card-subtitle>
 
                   <v-card-text class="text--primary">
-                    <div>{{ blogsdt[n].article}}</div>
-
-                    <div>Whitsunday Island, Whitsunday Islands</div>
+                    <div>{{ blogsdt[n].descrip}}</div>
+                    <br><br>
+                    <div>{{blogsdt[n].createdAt}}</div>
                   </v-card-text>
 
                   <v-card-actions justify="end">

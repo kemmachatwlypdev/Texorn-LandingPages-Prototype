@@ -38,11 +38,11 @@
            margin-inline-end: 0px;
            font-weight: bold; padding-left: 0px; color: black;"
           >
-            {{ blogs[id - 1].topics }}
+            {{ blogs[id - 1].title }}
           </h1>
           <div>
             <!-- <v-img class="rounded-circle" src="@/assets/img/writer.jpg" max-width="45" /><br> -->
-            <p class="sc-edeore-7 eHwIng">Texorn • August 17, 2022</p>
+            <p class="sc-edeore-7 eHwIng">Texorn Digital Solution • {{blogs[id-1].createdAt}}</p>
           </div>
         </div>
       </v-col>
