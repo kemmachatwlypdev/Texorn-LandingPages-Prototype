@@ -46,6 +46,7 @@
         </v-container>
       </v-col>
     </v-row>
+    <foote />
   </div>
 </template>
 
@@ -54,10 +55,11 @@ import navigation from "./NavigationBlogs.vue";
 import blogsData from "@/components/Blog/BlogItem/dataBlogs/data.json";
 import blogs from "./BlogItem/dataBlogs/data";
 import { required } from "vee-validate/dist/rules";
-
+import foote from "@/components/Footer";
 export default {
   components: {
     navigation,
+    foote
   },
   data() {
     return {
