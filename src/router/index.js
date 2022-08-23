@@ -4,6 +4,7 @@ import Blogs from '../components/Blog/BlogComponent.vue'
 import Home from '../view/homeComponent.vue'
 import BlogsItem from '../components/Blog/BlogItem/BlogItem.vue'
 import InputForms from '../components/DemoApp/InputForms/InputForms.vue'
+import InvoiceExtraction from '../components/DemoApp/InvoiceExtraction/InvoiceExtraction.vue'
 
 Vue.use(Router)
 
@@ -34,7 +35,12 @@ const routes = [
         path: '/inputforms',
         name: 'inputforms',
         component: InputForms,
-    }
+    },
+    {
+        path: '/invoiceextraction',
+        name: 'invoiceextraction',
+        component: InvoiceExtraction
+    },
 
 ]
 
