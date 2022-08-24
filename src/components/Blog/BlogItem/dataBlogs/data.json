@@ -21,8 +21,8 @@
         "id": 3,
         "title": "How to data binding axios?",
         "category": "",
-        "descrip": "",
-        "image": "@/components/Blog/BlogItem/BlogItemIMG/Robotic_process_automation-1108451648.png",
+        "descrip": "The goal of this challenge is to create a workflow that will read every table row and download the respective invoices. From the invoices...",
+        "image": "Process.jpg",
         "createdAt": "August 19, 2022",
         "article": "Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3"
     },
@@ -30,8 +30,8 @@
         "id": 4,
         "title": "How to bind image src",
         "category": "",
-        "descrip": "",
-        "image": "@/components/Blog/BlogItem/BlogItemIMG/Robotic_process_automation-1108451648.png",
+        "descrip": "The goal of this challenge is to create a workflow that will read every table row and download the respective invoices. From the invoices...",
+        "image": "sign.png",
         "createdAt": "August 20, 2022",
         "article": "Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3Article3"
     }

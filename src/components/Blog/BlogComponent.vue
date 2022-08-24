@@ -14,7 +14,7 @@
                   <v-img
                     class="white--text align-end"
                     height="200px"
-                    v-bind:src="getImg(blogsdt[1].image)" 
+                    v-bind:src="getImg(blogsdt[n].image)" 
                   >
                   <!-- Can't Dynamic [n] -->
                     <v-card-title style="color:white">{{ blogsdt[n].title }}</v-card-title>
