@@ -4,10 +4,10 @@
       <navigation :color="color" :flat="flat" />
     </div>
     <br /><br /><br />
-    <v-container class="">
-      <v-row no-gutters>
-        <v-col cols="6" sm="6" md="4">
-          <v-card class="pa-2" stlye="background-color: #119DA4" outlined tile> <!-- background color + size 100% -->
+    <v-container class="" style="height: 100%;">
+      <v-row no-gutters >
+        <v-col cols="12" md="4">
+          <v-card class="pa-2" style=" height: 100%;" outlined tile> <!-- background color + size 100% -->
             <h1 class="text-start">Instructions</h1>
             <p class="text-start">
               1. The goal of this challenge is to create a workflow that will
@@ -25,8 +25,8 @@
             </p>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="6" md="8">
-          <v-card class="pa-2 text-center" outlined tile>
+        <v-col cols="12" md="8" >
+          <v-card class="pa-2 text-center" style="height: 100%;" outlined tile>
             <validation-observer ref="observer" v-slot="{ invalid }">
               <form @submit.prevent="submit">
                 <validation-provider
