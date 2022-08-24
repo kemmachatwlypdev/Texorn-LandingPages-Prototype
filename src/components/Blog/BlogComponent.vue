@@ -35,7 +35,7 @@
                       Share
                     </v-btn>
 
-                    <v-btn color="orange" text href="/blogsitem/1">
+                    <v-btn color="orange" text v-bind:href="'/blogsitem/'+ blogsdt[n].id">
                       Explore
                     </v-btn>
                   </v-card-actions>
