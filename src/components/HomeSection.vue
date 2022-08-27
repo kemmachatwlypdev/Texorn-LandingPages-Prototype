@@ -82,7 +82,7 @@
         <v-img src="@/assets/img/borderWaves.svg" />
       </div>
     </v-parallax>
-    <v-container fluid id="features" class="mt-2">
+    <v-container fluid id="features" class="mt-6">
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="space-around">
@@ -95,7 +95,7 @@
             <v-col cols="12" sm="4" class="text-center" v-for="(feature, i) in features" :key="i">
               <v-hover v-slot:default="{ hover }">
                 <v-card class="card" shaped :elevation="hover ? 10 : 4" :class="{ up: hover }">
-                  <v-img :src="feature.img" max-width="100px" class="d-block ml-auto mr-auto"
+                  <v-img :src="feature.img" max-width="100px" class="d-block ml-auto mr-auto mt-2"
                     :class="{ 'zoom-efect': hover }"></v-img>
                   <h1 class="font-weight-regular">{{ feature.title }}</h1>
                   <h4 class="font-weight-regular subtitle-1">
@@ -264,7 +264,7 @@ export default {
 
 .card {
   min-height: 300px;
-  padding: 10px;
+  padding: 20px;
   transition: 0.5s ease-out;
 }
 
@@ -274,11 +274,11 @@ export default {
 }
 
 .card h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .zoom-efect {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .up {

@@ -108,7 +108,7 @@
 }
 .v-btn:before {
     background-color: currentColor;
-    border-radius: inherit;
+    border-radius: 0;
     bottom: 0;
     color: inherit;
     content: "";
