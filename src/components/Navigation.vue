@@ -108,7 +108,7 @@
 }
 .v-btn:before {
     background-color: currentColor;
-    border-radius: 0;
+    border-radius: 24px;
     bottom: 0;
     color: inherit;
     content: "";
@@ -134,6 +134,7 @@
     border-bottom: solid; }
 .v-menu__content {
   position: fixed !important;
+   border-radius: 8px !important;
 }
 .underline:hover {
     border-bottom: solid; }
