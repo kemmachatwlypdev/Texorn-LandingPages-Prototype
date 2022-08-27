@@ -69,9 +69,30 @@
         <v-btn text @click="$vuetify.goTo('#pricing')">
           <span class="mr-0">Services</span>
         </v-btn>
-        <v-btn text href="/blogs" target="_blank">
-          <span class="mr-0">Blogs</span>
+        <v-menu offset-y  open-on-hover>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn text
+          color="white"
+          v-bind="attrs"
+          v-on="on"
+        >
+         <span class="mr-0">Resource</span>
         </v-btn>
+      </template>
+  
+      <v-list style="background-color: white;">
+       <v-btn text href="/blogs" target="_blank">
+         <span class="textdropdown">Blogs</span>
+      </v-btn>
+     <br>
+        <v-btn text href="/blogs" target="_blank">
+         <span class="textdropdown">Demo</span>
+      </v-btn>
+      </v-list>
+      
+     
+    </v-menu>
+    
         <v-btn rounded text:true @click="$vuetify.goTo('#contact')">
           <span class="mr-0">Contact</span>
         </v-btn>
@@ -82,7 +103,21 @@
 
 <style scoped>
 .v-list-item:hover {
-  background-color: black;
+  background-color: white;
+}
+.v-btn:before {
+    background-color: currentColor;
+    border-radius: inherit;
+    bottom: 0;
+    color: inherit;
+    content: "";
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: unset;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
 .v-toolbar {
@@ -93,6 +128,8 @@
   height: 80px !important;
   padding-top: 10px;
 }
+.textdropdown:hover {
+    color: royalblue; }
 </style>
 
 <script>
@@ -107,6 +144,12 @@ export default {
       ["mdi-currency-usd", "Services", "#pricing"],
       ["mdi-email-outline", "Contact", "#contact"]
     ],
+     resource : [
+        { title: 'Blogs'  },
+        { title: 'Demo' },
+        // { title: 'Click Me' },
+        // { title: 'Click Me 2' },
+      ],
   }),
   props: {
     color: String,
