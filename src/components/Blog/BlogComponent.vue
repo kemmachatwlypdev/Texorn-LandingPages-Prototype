@@ -115,4 +115,15 @@ export default {
   position: absolute;
   width: 100%;
 }
+
+#blogs{
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  background: url("~@/assets/img/bgMain.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 </style>
