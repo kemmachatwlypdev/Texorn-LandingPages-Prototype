@@ -1,20 +1,18 @@
 <template>
   <div>
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      temporary
-      dark
-      src="@/assets/img/bgDrawer.jpg"
-    >
+    <v-navigation-drawer v-model="drawer" app temporary dark src="@/assets/img/bgDrawer.jpg">
       <v-list>
         <v-list-item>
           <v-list-item-avatar>
-            <img src="@/assets/img/logo.png" alt="Logo" />
+            <a href="/" no-caps flat color="primary">
+              <v-img src="@/assets/img/logo.png" max-width="10%" class="mt-1" />
+            </a>
+
+
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">Calango</v-list-item-title>
-            <v-list-item-subtitle>WEB</v-list-item-subtitle>
+            <v-list-item-title class="title">Texorn</v-list-item-title>
+            <v-list-item-subtitle>Digital Solution</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -22,59 +20,82 @@
       <v-divider />
 
       <v-list dense>
-        <v-list-item
-          v-for="([icon, text, link], i) in items"
-          :key="i"
-          link
-          @click="$vuetify.goTo(link)"
-        >
+        <v-list-item v-for="([icon, text, link], i) in items" :key="i" link @click="$vuetify.goTo(link)">
           <v-list-item-icon class="justify-center">
             <v-icon>{{ icon }}</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title class="subtitile-1">{{
-              text
+                text
             }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <router-link to="/blogs" class="text-decoration-none">
+          <v-list-item>
+            <v-list-item-icon class="justify-center text-decoration-none">
+              <v-icon>mdi-post-outline</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title class="subtitile-1 white--text text-decoration-none">
+                Blogs
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </router-link>
+        <!-- <v-btn href="/blogs" style="display:flex; background-color: transparent;">Blogs</v-btn> -->
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar
-      app
-      :color="color"
-      :flat="flat"
-      dark
-      class="px-15"
-      :class="{ expand: flat }"
-    >
+    <v-app-bar app :color="color" :flat="flat" dark class="px-0" :class="{ expand: flat }">
       <v-toolbar-title>
-        <v-img src="@/assets/img/logo.png" max-width="50px" />
+        <a href="/" no-caps flat color="primary">
+          <v-img src="@/assets/img/logo.png" max-width="11%" class="ml-2" />
+        </a>
+
       </v-toolbar-title>
       <v-spacer />
-      <v-app-bar-nav-icon
-        @click.stop="drawer = !drawer"
-        class="mr-4"
-        v-if="isXs"
-      />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="mr-0" v-if="isXs" />
       <div v-else>
-        <v-btn text @click="$vuetify.goTo('#hero')">
-          <span class="mr-2">Home</span>
+        <v-btn style="text-transform: none;" text href="/">
+          <span class="underline">Home</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#features')">
-          <span class="mr-2">About</span>
+        <v-btn style="text-transform: none;" text @click="$vuetify.goTo('#features')">
+          <span class="underline">About</span>
         </v-btn>
-        <v-btn icon href="https://stackoverflow.com/questions/49654527/open-link-in-new-window-with-vuetify-v-btn-and-vue-router" target="_blank">
-          <span class="mr-2">Blog</span>
+        <v-btn style="text-transform: none;" text @click="$vuetify.goTo('#download')">
+          <span class="underline">Academic</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-2">Academic</span>
+        <v-btn style="text-transform: none;" text @click="$vuetify.goTo('#pricing')">
+          <span class="underline">Services</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Services</span>
+      
+        <v-menu offset-y open-on-hover>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn style="text-transform: none;" text
+          color="white"
+          v-bind="attrs"
+          v-on="on"
+        >
+         <span class="underline">Resource</span>
         </v-btn>
-        <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
-          <span class="mr-2">Contact</span>
+      </template>
+  
+      <v-list style="background-color: white;">
+       <v-btn style="text-transform: none;" text href="/blogs" target="_blank">
+         <span class="textdropdown">Blogs</span>
+      </v-btn>
+     <br>
+        <v-btn style="text-transform: none;" text href="/blogs" target="_blank">
+         <span class="textdropdown">Demo</span>
+      </v-btn>
+      </v-list>
+      
+     
+    </v-menu>
+    
+        <v-btn style="text-transform: none;" rounded text:true @click="$vuetify.goTo('#contact')">
+          <span class="mr-0">Contact</span>
         </v-btn>
       </div>
     </v-app-bar>
@@ -82,6 +103,24 @@
 </template>
 
 <style scoped>
+.v-list-item:hover {
+  background-color: white;
+}
+.v-btn:before {
+    background-color: currentColor;
+    border-radius: 24px;
+    bottom: 0;
+    color: inherit;
+    content: "";
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: unset;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
 .v-toolbar {
   transition: 0.6s;
 }
@@ -90,6 +129,15 @@
   height: 80px !important;
   padding-top: 10px;
 }
+.textdropdown:hover {
+    color: royalblue;
+    border-bottom: solid; }
+.v-menu__content {
+  position: fixed !important;
+   border-radius: 8px !important;
+}
+.underline:hover {
+    border-bottom: solid; }
 </style>
 
 <script>
@@ -99,11 +147,12 @@ export default {
     isXs: false,
     items: [
       ["mdi-home-outline", "Home", "#hero"],
-      ["mdi-information-outline", "Sobre", "#features"],
-      ["mdi-download-box-outline", "Download", "#download"],
-      ["mdi-currency-usd", "Preços", "#pricing"],
-      ["mdi-email-outline", "Contatos", "#contact"],
+      ["mdi-information-outline", "About", "#features"],
+      ["mdi-download-box-outline", "Academic", "#download"],
+      ["mdi-currency-usd", "Services", "#pricing"],
+      ["mdi-email-outline", "Contact", "#contact"]
     ],
+   offset: true,  
   }),
   props: {
     color: String,
@@ -111,7 +160,7 @@ export default {
   },
   methods: {
     onResize() {
-      this.isXs = window.innerWidth < 850;
+      this.isXs = window.innerWidth < 1025;
     },
   },
 

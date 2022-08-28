@@ -16,7 +16,7 @@
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify">
+                  <p class="text-justify-start">
                     Save at least 80% of the cost within 12 months, allow organizations to recoup an investment, and lower up to 20% 
                     of the total expected expenses.
                   </p>
@@ -27,7 +27,7 @@
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify"> 
+                  <p class="text-justify-start"> 
                     Follow the steps quickly, accurately, and consistently around the clock.
                   </p>
                 </v-col>
@@ -37,7 +37,7 @@
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify"> 
+                  <p class="text-justify-start"> 
                     Due to fast services provided by the Robot, employees have more time to develop new creations to earn more values to the company and reduce workloads.
                   </p>
                 </v-col>

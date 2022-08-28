@@ -13,11 +13,11 @@
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/paperplane.svg"></v-img>
+                          <v-img src="~@/assets/img/Consult.png"></v-img>
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Robotic Process Creation Service</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">Consult</div>
                     <v-divider class="my-2"/>
                     <div class="text-uppercase blue--text">Custom Domain</div>
                     <v-divider class="my-2"/>
@@ -25,7 +25,7 @@
                     <v-divider class="my-2"/>
                     <div class="text-uppercase blue--text">OTHER FEATURES...</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">THB 10,000</div>
+                    <div class="text-uppercase text-p2 mt-6 black--text">we lauched online academic on website to........  </div>
                     <v-btn
                         v-bind="size"
                         rounded
@@ -33,7 +33,7 @@
                         color="blue"
                         class="mt-6"
                     >
-                      Comece Agora!
+                      Click to see more detail
                     </v-btn>
                   </v-card-text>
                   <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.smAndUp"></v-divider>
@@ -46,19 +46,19 @@
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/airplane.svg"/>
+                          <v-img src="~@/assets/img/Implement.png"/>
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Standard</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">Implementation</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Custom Domain</div>
+                    <div class="text-uppercase blue--text">Turn your business to end-to-end process</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">LIMIT OF 10000 DAILY ACCESS</div>
+                    <div class="text-uppercase blue--text">Save cost reduce time more efficient </div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">OTHER FEATURES...</div>
+                    <div class="text-uppercase blue--text">Easy to track and analyst growth</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">THB 100,000</div>
+                    <div class="text-uppercase text-p2 mt-6 black--text">we lauched online academic on website to........  </div>
                     <v-btn
                         v-bind="size"
                         rounded
@@ -66,7 +66,7 @@
                         color="blue"
                         class="mt-6"
                     >
-                      Comece Agora!
+                      Click to see more detail
                     </v-btn>
                   </v-card-text>
                   <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.mdAndUp"></v-divider>
@@ -81,19 +81,19 @@
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/aeroplane.svg"/>
+                          <v-img src="~@/assets/img/Academic.png"/>
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Business</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">Academy</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Custom Domain</div>
+                    <div class="text-uppercase blue--text">On hand experience by workshops</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">UNLIMIT DAILY ACCESS</div>
+                    <div class="text-uppercase blue--text">Interacting website help understaing</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">OTHER FEATURES...</div>
+                    <div class="text-uppercase blue--text">Base on Uipath leading platform provider</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">THB 1,000,000</div>
+                    <div class="text-uppercase text-p2 mt-6 black--text">we lauched online academic on website to........  </div>
                     <v-btn
                         v-bind="size"
                         rounded
@@ -101,7 +101,7 @@
                         color="blue"
                         class="mt-6"
                     >
-                      Comece Agora!
+                      Click to see more detail
                     </v-btn>
                   </v-card-text>
                 </div>
