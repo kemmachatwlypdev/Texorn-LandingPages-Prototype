@@ -5,27 +5,28 @@
     </div>
     <br /><br /><br />
     <v-container class="" style="height: 100%;">
-      <v-row no-gutters >
+      <v-row no-gutters>
         <v-col cols="12" md="4">
-          <v-card class="pa-2" style=" height: 100%;" outlined tile> <!-- background color + size 100% -->
+          <v-card class="pa-2" style=" height: 100%;" outlined tile>
+            <!-- background color + size 100% -->
             <h1 class="text-start">Instructions</h1>
             <p class="text-start">
               1. The goal of this challenge is to create a workflow that will
               input data from a spreadsheet into the form fields on the screen.
-              <br><br>
+              <br /><br />
               2. Beware! The fields will change position on the screen after
               every submission throughout 10 rounds thus the workflow must
               correctly identify where each spreadsheet record must be typed
               every time.
-               <br><br>
-              3. The actual countdown of the challenge will begin
-              once you click the Start button until then you may submit the form
-              as many times as you wish without receiving penalties. Good luck!
-               <br><br>
+              <br /><br />
+              3. The actual countdown of the challenge will begin once you click
+              the Start button until then you may submit the form as many times
+              as you wish without receiving penalties. Good luck!
+              <br /><br />
             </p>
           </v-card>
         </v-col>
-        <v-col cols="12" md="8" >
+        <v-col cols="12" md="8">
           <v-card class="pa-2 text-center" style="height: 100%;" outlined tile>
             <validation-observer ref="observer" v-slot="{ invalid }">
               <form @submit.prevent="submit">
@@ -188,9 +189,19 @@ export default {
 </script>
 
 <style>
-#footerInput{
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+#inputForms {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  background: url("~@/assets/img/bgMain.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#footerInput {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 </style>
