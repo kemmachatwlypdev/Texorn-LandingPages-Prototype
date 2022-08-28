@@ -57,35 +57,36 @@
       <v-spacer />
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="mr-0" v-if="isXs" />
       <div v-else>
-        <v-btn text href="/">
-          <span class="mr-0">Home</span>
+        <v-btn style="text-transform: none;" text href="/">
+          <span class="underline">Home</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#features')">
-          <span class="mr-0">About</span>
+        <v-btn style="text-transform: none;" text @click="$vuetify.goTo('#features')">
+          <span class="underline">About</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-0">Academic</span>
+        <v-btn style="text-transform: none;" text @click="$vuetify.goTo('#download')">
+          <span class="underline">Academic</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-0">Services</span>
+        <v-btn style="text-transform: none;" text @click="$vuetify.goTo('#pricing')">
+          <span class="underline">Services</span>
         </v-btn>
-        <v-menu offset-y  open-on-hover>
+      
+        <v-menu offset-y open-on-hover>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn text
+        <v-btn style="text-transform: none;" text
           color="white"
           v-bind="attrs"
           v-on="on"
         >
-         <span class="mr-0">Resource</span>
+         <span class="underline">Resource</span>
         </v-btn>
       </template>
   
       <v-list style="background-color: white;">
-       <v-btn text href="/blogs" target="_blank">
+       <v-btn style="text-transform: none;" text href="/blogs" target="_blank">
          <span class="textdropdown">Blogs</span>
       </v-btn>
      <br>
-        <v-btn text href="/inputforms" target="_blank">
+        <v-btn style="text-transform: none;" text href="/blogs" target="_blank">
          <span class="textdropdown">Demo</span>
       </v-btn>
       </v-list>
@@ -93,7 +94,7 @@
      
     </v-menu>
     
-        <v-btn rounded text:true @click="$vuetify.goTo('#contact')">
+        <v-btn style="text-transform: none;" rounded text:true @click="$vuetify.goTo('#contact')">
           <span class="mr-0">Contact</span>
         </v-btn>
       </div>
@@ -107,7 +108,7 @@
 }
 .v-btn:before {
     background-color: currentColor;
-    border-radius: inherit;
+    border-radius: 24px;
     bottom: 0;
     color: inherit;
     content: "";
@@ -129,7 +130,14 @@
   padding-top: 10px;
 }
 .textdropdown:hover {
-    color: royalblue; }
+    color: royalblue;
+    border-bottom: solid; }
+.v-menu__content {
+  position: fixed !important;
+   border-radius: 8px !important;
+}
+.underline:hover {
+    border-bottom: solid; }
 </style>
 
 <script>
@@ -144,12 +152,7 @@ export default {
       ["mdi-currency-usd", "Services", "#pricing"],
       ["mdi-email-outline", "Contact", "#contact"]
     ],
-     resource : [
-        { title: 'Blogs'  },
-        { title: 'Demo' },
-        // { title: 'Click Me' },
-        // { title: 'Click Me 2' },
-      ],
+   offset: true,  
   }),
   props: {
     color: String,

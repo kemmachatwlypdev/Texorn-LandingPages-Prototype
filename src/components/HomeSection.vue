@@ -1,11 +1,11 @@
 <template>
   <section id="hero">
     <v-parallax dark src="@/assets/img/bgHeroG3.png" height="1024">
-      <v-row align="center" justify="center">
+      <v-row align="start" justify="center" style= "margin-top :15%">
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4 mt-16">Texorn Digital Solution</h1>
+              <h1 class="display-2 font-weight-bold mb-4 mt-8">Texorn Digital Solution</h1>
               <h3 class="font-weight-bold">
                 We are a Startup company that is committed to developing <br />
                 Automation and Innovation that is different answer and the question <br />
@@ -24,11 +24,11 @@
                       stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
                   </svg>
                 </a>
-                <p class="subheading ml-2">Watch the video</p>
+                <p class="subheading ml-2 mt-4">Watch the video</p>
               </div>
 
 
-              <v-menu :rounded="rounded" top center>
+              <v-menu  top>
                 <template v-slot:activator="{ on, attrs }">
                   <v-btn style="color: black;background-color: white;" rounded outlined large dark v-bind="attrs"
                     v-on="on" class="mt-8">
@@ -37,7 +37,7 @@
                     <v-icon class="ml-2">mdi-arrow-right</v-icon>
                   </v-btn>
                 </template>
-                <br><br><br>
+                
                 <div class="overflow-hidden">
                   <v-menu__content class="row">
                     <div class="col-md-6"></div>
@@ -82,7 +82,7 @@
         <v-img src="@/assets/img/borderWaves.svg" />
       </div>
     </v-parallax>
-    <v-container fluid id="features" class="mt-2">
+    <v-container fluid id="features" class="mt-6">
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="space-around">
@@ -95,7 +95,7 @@
             <v-col cols="12" sm="4" class="text-center" v-for="(feature, i) in features" :key="i">
               <v-hover v-slot:default="{ hover }">
                 <v-card class="card" shaped :elevation="hover ? 10 : 4" :class="{ up: hover }">
-                  <v-img :src="feature.img" max-width="100px" class="d-block ml-auto mr-auto"
+                  <v-img :src="feature.img" max-width="100px" class="d-block ml-auto mr-auto mt-2"
                     :class="{ 'zoom-efect': hover }"></v-img>
                   <h1 class="font-weight-regular">{{ feature.title }}</h1>
                   <h4 class="font-weight-regular subtitle-1">
@@ -264,7 +264,7 @@ export default {
 
 .card {
   min-height: 300px;
-  padding: 10px;
+  padding: 20px;
   transition: 0.5s ease-out;
 }
 
@@ -274,11 +274,11 @@ export default {
 }
 
 .card h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .zoom-efect {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .up {
@@ -299,7 +299,7 @@ export default {
   overflow-x: hidden;
   contain: content;
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-radius: 24px;
 }
 
 .v-menu {
