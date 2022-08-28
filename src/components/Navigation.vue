@@ -85,7 +85,7 @@
          <span class="textdropdown">Blogs</span>
       </v-btn>
      <br>
-        <v-btn text href="/blogs" target="_blank">
+        <v-btn text href="/inputforms" target="_blank">
          <span class="textdropdown">Demo</span>
       </v-btn>
       </v-list>
