@@ -57,7 +57,7 @@
         </v-container>
       </v-col>
     </v-row>
-    <foote />
+    <foote id="footerInput" />
   </div>
 </template>
 
@@ -125,5 +125,10 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#footerInput {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 </style>
