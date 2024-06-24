@@ -8,7 +8,7 @@
               <v-img src="@/assets/img/ill2.svg" class="d-block ml-auto mr-auto" max-width="350px" />
             </v-col>
             <v-col cols="12" sm="8" class="white--text text-left">
-              <h1 class="font-weight-light display-2 mb-2">Texorn RPA Academic</h1>
+              <h1 class="font-weight-light display-2 mb-2">Case Studies</h1>
               <h1 class="font-weight-light">
                 Texorn RPA Academic providing structure <br>
                 to guide your progress towards the next step in your career. <br><br>
@@ -20,9 +20,9 @@
               </h1>
               <v-btn rounded outlined href="https://github.com/Joabsonlg/Landing-Page" target="_blank" large color="white" class="mt-4">
                 <v-icon class="mr-2">
-                  mdi-github
+                  mdi-file-document
                 </v-icon>
-                Git Hub
+                Request Document
               </v-btn>
             </v-col>
           </v-row>

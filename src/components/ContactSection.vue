@@ -12,11 +12,11 @@
               <h3 class="font-weight-light mt-3">
                 Telephone: +66‑90‑924‑5391
               </h3>
-              <h3 class="font-weight-light">
+              <h3 class="font-weight-light mt-3 ">
                 Email: kemmachat@texorn.tech
               </h3>
               <br>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.103778124134!2d100.47408021483002!3d13.712163990373144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299c32cd30903%3A0x5291b3423d8db8b6!2z4LiU4Li14LiZ4LiC4Lii4Lix4LiZ4LmA4LiU4Lif!5e0!3m2!1sth!2sth!4v1659950351248!5m2!1sth!2sth" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.103778124134!2d100.47408021483002!3d13.712163990373144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299c32cd30903%3A0x5291b3423d8db8b6!2z4LiU4Li14LiZ4LiC4Lii4Lix4LiZ4LmA4LiU4Lif!5e0!3m2!1sth!2sth!4v1659950351248!5m2!1sth!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </v-col>
             <v-col cols="12" sm="7">
               <v-form ref="form" v-model="valid" :lazy-validation="lazy">
@@ -97,6 +97,19 @@
   overflow: hidden;
 }
 
+  .google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+  }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
 </style>
 
 <script>
